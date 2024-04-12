@@ -1,31 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap&#39;');
 
-:root{
+:root {
     --cor-de-fundo: #1E1E1E;
     --azul-escuro: #7957FF;
     --branco: #FFFFFF;
-    --botao-ativo:#CC14AF;
+    --botao-ativo: #CC14AF;
     --botao-inativo: #BB01D9;
-    --texto-fundo: rgba (31,120,202,0.3);
+    --texto-fundo: rgba (31, 120, 202, 0.3);
 }
 
-body{
+body {
     background-color: var(--cor-de-fundo);
-    color:var(--branco);
+    color: var(--branco);
     font-family: " Chakra Pecth", sans-serif;
 }
 
-.titulo-principal span { 
+.titulo-principal span {
     color: var(--branco);
 }
 
-.titulo.titulo-principal{
+.titulo.titulo-principal {
     text-align: left;
     width: 100%;
     font-size: 32px;
 }
 
-.conteudo-principal{
+.conteudo-principal {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +36,7 @@ body{
 
 }
 
-.botao{
+.botao {
     font-family: "Chakra Petch", sans-serif;
     background-color: var(--botao-inativo);
     color: var(--branco);
@@ -50,37 +50,64 @@ body{
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
     border-top: none;
+
 }
 
-.botoes{
+.botoes {
     display: block;
 }
 
-.botao:first-child{
+.botao:first-child {
     border-radius: 40px 40px 0 0;
 }
 
-.botoes{
+.botoes {
     display: block;
 }
 
-.ativos{
+.ativos {
     background-color: var(--botao-ativo);
     border-bottom: var(--botao-ativo);
 }
-    .botao:first-child{
-        border-radius: 40px 40px 0 0;
-    }
 
-@media screen and (min-width: 768px ){
-    .botoes{
+.botao:first-child {
+    border-radius: 40px 40px 0 0;
+}
+
+
+.abas-textos{
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+.aba-conteudo.ativo{
+    display:block;
+}
+
+.aba-conteudo{
+    display: none;
+}
+
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+}
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+    .botoes {
         display: flex;
     }
-    .botao:first-child{
+
+    .botao:first-child {
         border-radius: 40px 0 0 0;
     }
-    .botao:last-child{
+
+    .botao:last-child {
         border-radius: 0 40px 0 0;
     }
 }
-  
